@@ -6,12 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".contacts">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/joker" />
+
     <TextView
         android:id="@+id/contact"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:text="Contacts"
+        android:textColor="#E4FFFFFF"
         android:textSize="60dp"
         tools:layout_editor_absoluteX="56dp"
         tools:layout_editor_absoluteY="91dp" />
@@ -21,18 +29,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/contact"
-        android:fontFamily="@font/aladin"
+        android:fontFamily="sans-serif-black"
         android:text="Email : ikaptoge@yahoo.com"
-        android:textSize="40dp" />
+        android:textColor="#D3FFFFFF"
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView2"
-        android:fontFamily="@font/aladin"
+        android:fontFamily="sans-serif-black"
         android:text="Phone : 0704539368"
-        android:textSize="40dp" />
+        android:textColor="#B2FFFFFF"
+        android:textSize="20sp" />
 
 
 </RelativeLayout>
