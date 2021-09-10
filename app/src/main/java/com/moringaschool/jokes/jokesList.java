@@ -2,9 +2,14 @@ package com.moringaschool.jokes;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -26,5 +31,20 @@ public class jokesList extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_jokes_list);
         ButterKnife.bind(this);
+
+        MyJokesArrayAdapter adapter = new MyJokesArrayAdapter(this, android.R.layout.simple_list_item_1,jokes);
+        mListView.setAdapter(adapter);
+
+        mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                String jokes = ((TextView)view).getText().toString();
+                Toast.makeText(jokesList.this,jokes,Toast.LENGTH_LONG).show();
+            }
+        });
+
+        Intent intent = getIntent();
+        String jokes = intent.getStringExtra("jokes");
+        mjokesTextView.setText("Here are the type of jokes "+jokes);
     }
 }
