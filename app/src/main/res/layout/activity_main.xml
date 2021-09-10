@@ -29,7 +29,7 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/RecipeEditText"
+        android:id="@+id/typeEditText"
         android:background="@color/colorTextIcons"
         android:layout_below="@+id/appNameTextView"
         android:layout_marginTop="60dp"
@@ -41,9 +41,9 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/RecipeEditText"
-        android:text="Get Joke"
-        android:id="@+id/findRecipesButton"
+        android:layout_below="@+id/typeEditText"
+        android:text="Get Jokes"
+        android:id="@+id/findJokesButton"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="30dp"
