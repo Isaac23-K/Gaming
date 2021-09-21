@@ -1,15 +1,17 @@
-package com.moringaschool.jokes;
+package com.moringaschool.jokes.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.moringaschool.jokes.MyJokesArrayAdapter;
+import com.moringaschool.jokes.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

@@ -1,8 +1,10 @@
-package com.moringaschool.jokes;
+package com.moringaschool.jokes.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.moringaschool.jokes.R;
 
 public class contacts extends AppCompatActivity {
 

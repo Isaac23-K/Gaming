@@ -26,29 +26,6 @@
         android:textSize="50sp"
         android:textStyle="bold" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/typeEditText"
-        android:background="@color/colorTextIcons"
-        android:layout_below="@+id/appNameTextView"
-        android:layout_marginTop="60dp"
-        android:padding="5dp"
-        android:hint="Search for Type of Joke"
-        android:layout_centerHorizontal="true"
-        />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/typeEditText"
-        android:text="Get Jokes"
-        android:id="@+id/findJokesButton"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="30dp"
-        android:background="@color/colorSecondaryText"
-        android:textColor="@color/colorTextIcons" />
 
     <Button
         android:layout_width="match_parent"
@@ -59,4 +36,16 @@
         android:layout_centerHorizontal="true"
         android:background="@color/colorSecondaryText"
         android:textColor="@color/colorTextIcons" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/catlist"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_container">
+    </FrameLayout>
 </RelativeLayout>
