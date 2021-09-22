@@ -13,10 +13,10 @@ import com.moringaschool.jokes.model.Joke;
 
 import java.util.List;
 
-public class jokeAdapter extends RecyclerView.Adapter<jokeAdapter.ViewHolder> {
+public class JokeAdapter extends RecyclerView.Adapter<JokeAdapter.ViewHolder> {
     List<Joke> allJokes ;
 
-    public jokeAdapter (List<Joke>jokes){
+    public JokeAdapter(List<Joke>jokes){
         this.allJokes = jokes ;
     }
 
@@ -28,7 +28,7 @@ public class jokeAdapter extends RecyclerView.Adapter<jokeAdapter.ViewHolder> {
     }
 
     @Override
-    public void onBindViewHolder(@NonNull jokeAdapter.ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull JokeAdapter.ViewHolder holder, int position) {
         // check joke type
         if (allJokes.get(position).getType().equals("single")){
             holder.firsLine.setText(allJokes.get(position).getJoke());
