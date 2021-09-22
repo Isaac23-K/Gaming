@@ -27,8 +27,8 @@ public class MainActivity extends AppCompatActivity {
     RecyclerView catList;
     List<String> categories ;
     CategoryAdapter adapter ;
-    @BindView(R.id.appNameTextView)
-    TextView mAppNameTextView ;
+//    @BindView(R.id.appNameTextView)
+//    TextView mAppNameTextView ;
 
 
     @Override
@@ -40,20 +40,20 @@ public class MainActivity extends AppCompatActivity {
         // cat names
         categories.add("Any");
         categories.add("Programming");
-        categories.add("Music");
+        categories.add("Misc");
         categories.add("Dark");
         categories.add("Pun");
         categories.add("Spooky");
         categories.add("Christmas");
 
 
-        catList = findViewById(R.id.catlist);
+        catList = findViewById(R.id.jokeCatList);
         adapter = new CategoryAdapter(categories);
         catList.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false));
         catList.setAdapter(adapter);
 
         FragmentManager manager = getSupportFragmentManager();
-        FragmentTransaction transaction = manager.beginTransaction().replace(R.id.fragment_container, new Main());
+        FragmentTransaction transaction = manager.beginTransaction().replace(R.id.fragment_frame, new Main( getResources().getString(R.string.Url)+"Any?amount=10"));
         transaction.commit();
         }
     }
