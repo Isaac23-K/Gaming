@@ -96,7 +96,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
     public void loadFragment(View v ,Fragment fragment){
         AppCompatActivity activity = (AppCompatActivity) v.getContext();
         FragmentManager manager = activity.getSupportFragmentManager();
-        FragmentTransaction transaction = manager.beginTransaction().replace(R.id.fragment_container,fragment);
+        FragmentTransaction transaction = manager.beginTransaction().replace(R.id.fragment_frame,fragment);
         transaction.commit();
 
     }

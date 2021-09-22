@@ -48,7 +48,7 @@ public class Main extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_main, container, false);
-        jokesList = v.findViewById(R.id.jokelist);
+        jokesList = v.findViewById(R.id.jokesList);
         jokesList.setLayoutManager(new LinearLayoutManager(v.getContext()));
 
         getJokes(jokeApiUrl);
