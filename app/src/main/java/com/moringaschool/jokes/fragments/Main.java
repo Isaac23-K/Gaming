@@ -22,6 +22,8 @@ import com.moringaschool.jokes.Adapters.JokeAdapter;
 import com.moringaschool.jokes.R;
 import com.moringaschool.jokes.model.Joke;
 
+import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
@@ -62,7 +64,32 @@ public class Main extends Fragment {
         JsonObjectRequest objectRequest = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
-                Log.d(TAG, "onResponse: "+response.toString());
+               // Log.d(TAG, "onResponse: "+response.toString());
+                try {
+                    int amount = Integer.parseInt(response.getString("amount"));
+                    JSONArray jokesArray = response.getJSONArray("jokes");
+                     for (int i = 0 ; i < amount; i++){
+                            JSONObject jokes = jokesArray.getJSONObject(i);
+                        // Log.d(TAG, "onResponse: "+ jokes.getString("type"));
+                         Joke j = new Joke();
+                         j.setType(jokes.getString("type"));
+                         if (jokes.getString("type").equals("single")){
+                             j.setJoke(jokes.getString("joke"));
+
+                         }   else {
+                             j.setSetup(jokes.getString("setup"));
+                             j.setDelivery(jokes.getString("delivery"));
+
+                         }
+
+                         allJokes.add(j);
+                         adapter.notifyDataSetChanged();
+                     }
+
+
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
             }
         }, new Response.ErrorListener() {
             @Override
