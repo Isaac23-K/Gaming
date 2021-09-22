@@ -1,6 +1,6 @@
 package com.moringaschool.jokes.model;
 
-public class joke {
+public class Joke {
     private String type ;
     private String setup ;
     private String delivery ;
