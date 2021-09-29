@@ -27,7 +27,8 @@
             android:id="@+id/btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Contacts" />
+            android:text="Rotate"
+            app:iconTint="#190F0F" />
     </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
