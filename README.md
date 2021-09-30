@@ -11,7 +11,7 @@
 
   ## ScreenShots
 
-![alt text](https://Screenshot from 2021-09-30 09-47-42.png)
+![Screen Shot](https://github.com/Isaac23-K/Gaming/blob/master/Screenshot%20from%202021-09-30%2009-47-42.png)
   
 
 ## Project set up instructions
@@ -22,7 +22,6 @@
 ## Technology Used 
    - Android Studio(You can download one here https://developer.android.com/studio)
     - Java Language
-    - JUnit 4.12
     - Gradle
     - Firebase
 
