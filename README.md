@@ -11,7 +11,7 @@
 
   ## ScreenShots
 
-![Screen Shot](https://github.com/Isaac23-K/Gaming/blob/master/Screenshot%20from%202021-09-30%2009-47-42.png)
+![Screen Shot](https://github.com/Isaac23-K/Gaming/blob/master/Screenshot%20from%202021-09-30%2009-47-42.png?token=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)
   
 
 ## Project set up instructions
@@ -20,10 +20,10 @@
 - Run the app .
 
 ## Technology Used 
-   - Android Studio(You can download one here https://developer.android.com/studio)
-    - Java Language
-    - Gradle
-    - Firebase
+- Android Studio(You can download one here https://developer.android.com/studio)
+- Java Language
+- Gradle
+- Firebase
 
 
   ## Maintainers
