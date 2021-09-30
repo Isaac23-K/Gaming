@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Animation animation = AnimationUtils.loadAnimation(MainActivity.this,R.anim.rotate);
+                Animation animation = AnimationUtils.loadAnimation(MainActivity.this,R.anim.zoomout);
                 b.startAnimation(animation);
             }
         });
