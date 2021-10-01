@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "177811506208",
+    "project_id": "jokes-e4bf6",
+    "storage_bucket": "jokes-e4bf6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:177811506208:android:bc6cc2c28458e421276845",
+        "android_client_info": {
+          "package_name": "com.moringaschool.jokes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "177811506208-1gmansgnc57p57e4quprqnfelhbsfbqb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.moringaschool.jokes",
+            "certificate_hash": "2b30258672963ed2ff22bfe988d4584052944351"
+          }
+        },
+        {
+          "client_id": "177811506208-t08bkktb67abh93aobg3jfn6stt761ub.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3VHAE6pmPpxq7m5AtAP_-Hd7GBZ6rllA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "177811506208-t08bkktb67abh93aobg3jfn6stt761ub.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

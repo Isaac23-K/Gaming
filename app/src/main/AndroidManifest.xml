@@ -11,15 +11,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Jokes">
-        <activity android:name=".ui.jokesList"></activity>
-        <activity android:name=".ui.contacts" />
-        <activity android:name=".ui.MainActivity">
+        <activity android:name=".ui.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ui.CreateAccountActivity" />
+<!--        <activity android:name=".ui.jokesList" />-->
+        <activity android:name=".ui.contacts" />
+        <activity android:name=".ui.MainActivity"
+            android:theme="@style/NoActionBarTheme">
+        </activity>
     </application>
-
 </manifest>
